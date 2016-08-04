@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>margin的塌陷现象</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.p1{
+			width: 200px;
+			height: 100px;
+			background-color: red;
+			margin-bottom: 20px;
+		}
+		.p2{
+			width: 200px;
+			height: 100px;
+			background-color: pink;
+			margin-top: 40px;
+		}
+		.c1{
+			clear: both;
+			height: 30px;
+		}
+		.box{
+			width: 300px;
+			border: 1px solid black;
+		}
+		.p3{
+			width: 300px;
+			height: 100px;
+			background-color: blue;
+			margin-bottom: 20px;
+			float: left;
+		}
+		.p4{
+			width: 300px;
+			height: 100px;
+			background-color: green;
+			margin-top: 40px;
+			float: left;
+		}
+	</style>
+</head>
+<body>
+	<!-- 在标准文档流的margin塌陷现象 -->
+	<div>
+		<p class="p1"></p>
+		<p class="p2"></p>
+	</div>
+	<div class="c1"></div>
+	<!-- 不在标准文档流margin没有塌陷现象 -->
+	<div class="box">
+		<p class="p3"></p>
+		<p class="p4"></p>
+	</div>
+</body>
+</html>

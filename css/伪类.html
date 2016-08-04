@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>伪类//超链接的美化</title>
+	<style type="text/css">
+		a:link{
+			color: red;
+		}
+		a:visited{
+			color:gold;
+		}
+		a:hover{
+			color:green;
+		}
+		a:active{
+			color: black;
+		}
+		.c1{
+			height: 30px;
+		}
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.nav{
+			width: 960px;
+			height: 50px;
+			border: 1px solid red;
+			margin: 100px auto;
+		}
+		.nav ul{
+			list-style: none;
+		}		
+		.nav ul li{
+			float: left;
+			width: 120px;
+			line-height: 40px;
+			text-align: center;
+			background-color: green;
+		}
+		.nav ul li a{
+			display: block;
+			width: 120px;
+			height: 50px;
+		}
+
+		.nav ul il a:link, .nav ul li a:visited{
+			text-decoration: none;;
+			background-color: green;
+			color: red;
+		}
+		.nav ul li a:hover{
+			background-color: pink;
+		}
+	</style>
+</head>
+<body>
+	<a href="http://www.563.com" target="_blank">点击我去363</a>
+	<a href="http://www.163.com" target="_blank">点击我去网易</a>
+	<div class="c1"></div>
+	<div class="nav">
+		<ul>
+			<li><a href="#">网站栏目</a></li>
+			<li><a href="#">网站栏目</a></li>
+			<li><a href="#">网站栏目</a></li>
+			<li><a href="#">网站栏目</a></li>
+			<li><a href="#">网站栏目</a></li>
+			<li><a href="#">网站栏目</a></li>
+			<li><a href="#">网站栏目</a></li>
+			<li><a href="#">网站栏目</a></li>
+		</ul>
+	</div>
+</body>
+</html>

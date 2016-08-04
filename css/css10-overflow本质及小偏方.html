@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>overflow的本质以及偏方</title>
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+		.box1{
+			width: 20%;
+			height: 110px;
+			margin: 0 auto;
+			border: 1px solid;
+			overflow: hidden;
+		}
+		.c1{
+			clear: both;
+			height: 30px;
+		}
+		.box2{
+			border: 10px solid black;
+			width: 900px;
+			margin: 0 auto;
+			overflow: hidden;
+		}
+		.p1{
+			float: left;
+			width: 90px;
+			height: 100px;
+			background-color: red;
+		}
+		.p2{
+			float: left;
+			width: 90px;
+			height: 399px;
+			background-color: blue;
+		}
+		.p3{
+			float: left;
+			width: 90px;
+			height: 120px;
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<div class="box1">
+		内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+		内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+	</div>
+	<div class="c1"></div>
+	<div class="box2">
+		<p class="p1">mama</p>
+		<p class="p2">dada</p>
+		<p class="p3">baba</p>
+	</div>
+</body>
+</html>

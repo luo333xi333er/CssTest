@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>利用overflow:hidden清除浮动</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.dd{
+			overflow: hidden;
+		}
+		.dd li{
+			float: left;
+			line-height: 40px;
+			text-align: center;
+			width: 100px;
+			background-color: yellow;
+		} 
+		.c1{
+			clear: both;
+			height: 40px;
+		}
+		.box1{
+			overflow: hidden;
+			width: 400px;
+			height: 100px;
+			border: 1px solid red;
+		}
+		.box1 ul{
+			list-style: none;
+		}
+		.box1 ul li{
+			overflow: hidden;
+			_zoom:1;
+		}
+		.box1 ul li .title{
+			float: left;
+		}
+		.box1 ul li .date{
+			float: right;
+		}
+	</style>
+</head>
+<body>
+	<div class="dd">
+		<ul>
+			<li>fghj</li>
+			<li>fghjk</li>
+			<li>dfghj</li>
+			<li>wertyu</li>
+		</ul>
+	</div>
+	<div class="dd">
+		<ul>
+			<li>sdfghjk</li>
+			<li>ertyu</li>
+			<li>yuioert</li>
+			<li>wertyui</li>
+		</ul>
+	</div>
+	<div class="c1"></div>
+	<div class="box1">
+		<ul>
+			<li>
+				<span class="title">hdfghjkl</span>
+				<span class="date">345678678</span>
+			</li>
+			<li>
+				<span class="title">ertyuiop</span>
+				<span class="date">3456789</span>
+			</li>
+			<li>
+				<span class="title">ertyuio</span>
+				<span class="date">4567890</span>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
